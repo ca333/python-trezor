@@ -26,7 +26,7 @@ cache_dir = None
 
 
 def is_zcash(coin):
-    return coin["coin_name"].lower().startswith("zcash")
+    return coin["coin_name"].lower().startswith("zcash") or coin["coin_name"].lower().startswith("komodo")
 
 
 def is_capricoin(coin):
