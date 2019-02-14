@@ -84,12 +84,7 @@ class TestMsgSigntxKomodo(TrezorTest):
                 branch_id=0x76B809BB,
             )
             _, serialized_tx = btc.sign_tx(
-                self.client,
-                "Komodo",
-                [inp1],
-                [out1],
-                details=details,
-                prev_txes=TX_API,
+                self.client, "Komodo", [inp1], [out1], details=details, prev_txes=TX_API
             )
 
         # Accepted by network: tx 92b45f54cb7c3cdfc4a88dbf088dfcc7c1417ad0955f02712e136da7fd5343d6
